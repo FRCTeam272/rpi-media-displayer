@@ -1,0 +1,7 @@
+- [ ] check if internet connection is there
+    - [ ] pull from GIt
+    - [ ] read contents from a csv file (name, youtube url)
+    - [ ] check against already downloaded vids
+        - [ ] remove vids removed from the csv
+        - [ ] use youtbedl to download needed ones
+- [ ] display the downloaded videos 
