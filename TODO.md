@@ -1,4 +1,4 @@
-- [x] make it do the compile thingy
+- [x] make it do the compile thingy [@JakeGads]
 - [ ] check if internet connection is there
     - [ ] pull from GIt
     - [ ] read contents from a csv file (name, youtube url)
