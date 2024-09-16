@@ -8,7 +8,7 @@ CFLAGS = -g -Wall
 default: $(TARGET)
 all: default
 
-OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
+OBJECTS = $(patsubst %.cpp, %.o, $(wildcard *.cpp))
 HEADERS = $(wildcard *.h)
 
 %.o: %.c $(HEADERS)
