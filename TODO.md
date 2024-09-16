@@ -1,6 +1,7 @@
 - [x] make it do the compile thingy [@JakeGads]
-- [ ] check if internet connection is there [@JakeGads]
-    - [ ] pull from Git [@JakeGads]
+- [x] check if internet connection is there [@JakeGads]
+    - [ ] ~~ pull from Git [@JakeGads] ~~
+    - [x] download a file (hosted on github) [@JakeGads]
     - [ ] read contents from a csv file (name, youtube url) [@Nicholas-hertz]
     - [ ] check against already downloaded vids [@Nicholas-hertz]
         - [ ] remove vids removed from the csv [@Nicholas-hertz]

@@ -2,5 +2,5 @@
 #define INTERNET_H
 
 bool internet_connected();
-
+bool download_file(const char* url, const char* destination);
 #endif // INTERNET_H
