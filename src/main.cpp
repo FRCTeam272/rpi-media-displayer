@@ -5,6 +5,8 @@
 #include <iostream>
 
 using namespace std;
+const char* url = "https://raw.githubusercontent.com/FRCTeam272/rpi-media-displayer/check_internet/data.csv";
+const char* downloaded = "download.csv";
 
 int main() {
     printf("Hello, World!\n");
@@ -13,15 +15,13 @@ int main() {
 
     if (connected) {
         const char* url = "https://raw.githubusercontent.com/FRCTeam272/rpi-media-displayer/check_internet/data.csv";
-        const char* destination = "data.csv";
-        if (download_file(url, destination)) {
-            printf("File downloaded successfully to %s\n", destination);
+        if (download_file(url, downloaded)) {
+            printf("File downloaded successfully to %s\n", downloaded);
         } else {
             printf("Failed to download file from %s\n", url);
         }
 
-        string filepath = "../data.csv";
-        vector<CSVData> data = GetDataFromCsv(filepath);
+        vector<CSVData> data = GetDataFromCsv(downloaded);
 
         //here to spit out csv data as a test
         for(int i = 0; i < data.size(); i++){
