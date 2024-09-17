@@ -50,16 +50,3 @@ vector<CSVData> GetDataFromCsv(string filepath)
 
     return fileData;
 }
-
-int main() {
-
-    string filepath = "../data.csv";
-    vector<CSVData> data = GetDataFromCsv(filepath);
-
-    //here to spit out csv data as a test
-    for(int i = 0; i < data.size(); i++){
-        cout << data[i].name << " - " << data[i].url << endl;
-    }
-
-    return 0;
-}
