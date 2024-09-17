@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include "internet.h"
 #include <stdlib.h>
+#include "csv.h"
+#include <iostream>
 
+using namespace std;
 
 int main() {
     printf("Hello, World!\n");
@@ -16,6 +19,15 @@ int main() {
         } else {
             printf("Failed to download file from %s\n", url);
         }
+
+        string filepath = "../data.csv";
+        vector<CSVData> data = GetDataFromCsv(filepath);
+
+        //here to spit out csv data as a test
+        for(int i = 0; i < data.size(); i++){
+            cout << data[i].name << " - " << data[i].url << endl;
+        }
+
     } else {
         printf("No internet connection. Cannot download file.\n");
     }
