@@ -2,7 +2,7 @@
 - [x] check if internet connection is there [@JakeGads]
     - [ ] ~~ pull from Git [@JakeGads] ~~
     - [x] download a file (hosted on github) [@JakeGads]
-    - [ ] read contents from a csv file (name, youtube url) [@Nicholas-hertz]
+    - [x] read contents from a csv file (name, youtube url) [@Nicholas-hertz]
     - [ ] check against already downloaded vids [@Nicholas-hertz]
         - [ ] remove vids removed from the csv [@Nicholas-hertz]
         - [ ] use youtbedl to download needed ones [@JakeGads]
