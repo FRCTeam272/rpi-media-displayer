@@ -14,7 +14,6 @@ int main() {
     printf("Internet connected: %s\n", connected ? "true" : "false");
 
     if (connected) {
-        const char* url = "https://raw.githubusercontent.com/FRCTeam272/rpi-media-displayer/check_internet/data.csv";
         if (download_file(url, downloaded)) {
             printf("File downloaded successfully to %s\n", downloaded);
         } else {
