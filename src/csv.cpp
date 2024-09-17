@@ -3,7 +3,7 @@
 #include<iostream>
 #include<fstream>
 #include<sstream>
-#include "csv.hpp"
+#include "csv.h"
 
 using namespace std;
 
@@ -39,7 +39,9 @@ vector<CSVData> GetDataFromCsv(string filepath)
         row = SplitString(line, ',');
 
         if(row.size() >= 2){
-            CSVData rowData = CSVData(row[0], row[1]);
+            CSVData rowData;
+            rowData.name = row[0];
+            rowData.url = row[1];
             fileData.push_back(rowData);
         }
     }
@@ -47,4 +49,17 @@ vector<CSVData> GetDataFromCsv(string filepath)
     fin.close();
 
     return fileData;
+}
+
+int main() {
+
+    string filepath = "../data.csv";
+    vector<CSVData> data = GetDataFromCsv(filepath);
+
+    //here to spit out csv data as a test
+    for(int i = 0; i < data.size(); i++){
+        cout << data[i].name << " - " << data[i].url << endl;
+    }
+
+    return 0;
 }
